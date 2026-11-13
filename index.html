@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prismo Studio – Objects &amp; Interfaces</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<header>
+<nav class="wrap" aria-label="Main">
+<a class="logo" href="#top">Prismo<span class="gt">.</span></a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul class="menu" id="menu">
+<li><a href="#products">Products</a></li>
+<li><a href="#work">Work</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li class="dd"><button aria-expanded="false" aria-haspopup="true">Studio ▾</button>
+<ul><li><a href="#stats">Numbers</a></li><li><a href="#faq">How we work</a></li><li><a href="#contact">Contact</a></li></ul></li>
+<li><button class="btn pri" data-open="contact">Start a project</button></li>
+</ul>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="bg px sl" aria-hidden="true"></div>
+<div class="blob b1 px f" aria-hidden="true"></div>
+<div class="blob b2 px" aria-hidden="true"></div>
+<div class="shape s1 px f" aria-hidden="true"></div>
+<div class="shape s2 px sl" aria-hidden="true"></div>
+<div class="shape s3 px" aria-hidden="true"></div>
+<div class="wrap hgrid">
+<div>
+<h1 aria-label="Objects that glow back"><span style="--i:0">Objects</span> <span style="--i:1">that</span> <span class="gt" style="--i:2">glow</span> <span class="gt" style="--i:3">back.</span></h1>
+<p class="lead">Prismo designs light, sound and screens that react to you. Explore three products and the interfaces we build around them.</p>
+<div class="cta"><a class="btn pri" href="#products">See the products</a><a class="btn" href="#work">View our work</a></div>
+</div>
+<div class="stage" aria-hidden="true"><div class="orb"><i></i><i></i><i></i><b></b></div></div>
+</div>
+</section>
+
+<section id="products"><div class="wrap">
+<h2 class="reveal">Three products, <span class="gt">one glow</span></h2>
+<p class="sub reveal">Hover, focus or move your pointer across a card to tilt it in 3D.</p>
+<div class="grid3">
+<article class="pcard reveal"><div class="pin"><div class="pic" style="--g:linear-gradient(135deg,#7b3fe4,#ff6b8a);--s:linear-gradient(160deg,#fff,#ffc857);--c:circle(50%)"><div class="art"><em></em></div></div><h3>Aura Speaker</h3><p>360° sound inside a ring of light that follows the beat.</p><div class="price"><strong>$189</strong><button class="btn" data-open="contact">Reserve</button></div></div></article>
+<article class="pcard feat reveal"><div class="pin"><div class="pic" style="--g:linear-gradient(135deg,#0f766e,#4fd1c5);--s:linear-gradient(160deg,#fff,#ff6b8a);--c:polygon(50% 0,100% 38%,82% 100%,18% 100%,0 38%)"><div class="art"><em></em></div></div><h3>Lumen Lamp</h3><p>Warms from sunrise amber to deep-focus blue through the day.</p><div class="price"><strong>$129</strong><button class="btn pri" data-open="contact">Reserve</button></div></div></article>
+<article class="pcard reveal"><div class="pin"><div class="pic" style="--g:linear-gradient(135deg,#ffc857,#ff6b8a);--s:linear-gradient(160deg,#fff,#7b3fe4);--c:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)"><div class="art"><em></em></div></div><h3>Flux Watch</h3><p>A glass dial that turns notifications into quiet ripples.</p><div class="price"><strong>$249</strong><button class="btn" data-open="contact">Reserve</button></div></div></article>
+</div></div></section>
+
+<div class="band" id="stats"><div class="wrap">
+<div class="reveal"><strong>120+</strong><span>projects shipped</span></div>
+<div class="reveal"><strong>14</strong><span>design awards</span></div>
+<div class="reveal"><strong>60fps</strong><span>animation target</span></div>
+</div></div>
+
+<section id="work"><div class="wrap">
+<h2 class="reveal">Selected <span class="gt">work</span></h2>
+<p class="sub reveal">Filter by category. Select a project to open it in the lightbox.</p>
+<div class="filters" role="group" aria-label="Filter projects">
+<button class="btn" aria-pressed="true" data-f="all">All</button><button class="btn" aria-pressed="false" data-f="Branding">Branding</button><button class="btn" aria-pressed="false" data-f="Web">Web</button><button class="btn" aria-pressed="false" data-f="Product">Product</button>
+</div>
+<div class="gal" id="gal"></div>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:760px">
+<h2 class="reveal">Questions</h2>
+<p class="sub reveal">Open one at a time.</p>
+<details name="faq" open><summary>How long does a project take?</summary><div>Most brand and web projects ship in six to ten weeks. Product work runs longer.</div></details>
+<details name="faq"><summary>Do you build the website too?</summary><div>Yes. We design and build in plain HTML, CSS and a little JavaScript, so pages stay fast.</div></details>
+<details name="faq"><summary>Can I see work in progress?</summary><div>Every Friday you get a link to a live preview you can comment on.</div></details>
+</div></section>
+</main>
+
+<footer><div class="wrap"><button class="btn pri" data-open="contact">Start a project</button><p style="margin-top:1.5rem">© 2026 Prismo Studio. Built with CSS scroll-driven animations and the View Transitions API.</p></div></footer>
+
+<dialog id="contact" aria-labelledby="ct"><button class="btn x" data-close aria-label="Close">✕</button>
+<h2 id="ct" style="font-size:2rem">Start a project</h2><p class="sub">Tell us what you want to make.</p>
+<form method="dialog" id="cf"><label for="n">Name</label><input id="n" required><label for="m">Message</label><textarea id="m" rows="3" required></textarea><button class="btn pri">Send message</button><p id="ok" role="status" style="margin-top:1rem;color:var(--aqua)"></p></form></dialog>
+
+<dialog id="lb" aria-labelledby="lt"><button class="btn x" data-close aria-label="Close">✕</button>
+<div class="big" id="lbi"></div><span class="tag" id="lc"></span><h2 id="lt" style="font-size:2rem"></h2><p class="sub" id="ld" style="margin:0"></p></dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>
