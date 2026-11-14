@@ -139,6 +139,7 @@ footer{padding:3rem 0;text-align:center;color:var(--mute);border-top:1px solid v
 .px{animation:par linear both;animation-timeline:scroll(root);animation-range:0 100vh}
 .px.f{--r:-160px}.px.sl{--r:-50px}
 }
+
 @keyframes in{from{opacity:0;transform:translateY(50px) scale(.96)}}
 @keyframes par{to{transform:translateY(var(--r,-80px))}}
 @supports not (animation-timeline:view()){
@@ -147,6 +148,7 @@ footer{padding:3rem 0;text-align:center;color:var(--mute);border-top:1px solid v
 .px{transform:translateY(calc(var(--sy,0)*var(--k,-.2)))}
 .px.f{--k:-.5}.px.sl{--k:-.1}
 }
+
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.4s}
 
 @media(max-width:860px){.hgrid{grid-template-columns:1fr}.stage{height:20rem}.orb{width:11rem;height:11rem}section{padding:4rem 0}}
